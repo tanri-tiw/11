@@ -1,0 +1,113 @@
+body
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    margin: auto auto;
+    background-color:  hsl(185, 75%, 39%);
+    overflow: hidden;
+    
+}
+.bottom
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container
+{
+    background: white;
+    background-image: url("images/bg-pattern-card.svg");
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    border-radius:15px;
+   
+}
+.bg-top
+{
+    position: absolute;
+    left: -20%;
+    top: -60%;
+    z-index: -1;
+}
+.bg-bottom
+{
+    position: absolute;
+    right: -15%;
+    bottom: -90%;
+    z-index: -1;
+}
+
+.name-pic
+{
+    text-align: center;
+    padding-top: 30%;
+    margin: 20px;
+
+}
+h1
+{
+   color: hsl(229, 23%, 23%); 
+   margin-bottom: 4px;
+   
+}
+span,h2
+{
+    color: hsl(227, 10%, 46%);
+    font-weight: normal;
+}
+h2{
+   margin-top: 0;
+}
+h3
+{
+    margin-bottom: 0;
+    color: hsl(229, 23%, 23%);
+}
+p
+{
+    color:  hsl(227, 10%, 46%);
+    padding-top: 0;
+    letter-spacing: 1px;
+}
+.name-pic img
+{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.bottom{
+    text-align: center;
+    /* margin: 20px; */
+    width: 100%;
+}
+hr
+{
+  
+   border: 0.5px solid hsl(0, 1%, 79%) ;
+}
+@media only screen and (max-width: 384px) {
+    body {
+      max-width:70vw;
+      margin: auto auto;
+    }
+    .container
+    {
+        min-width :350px;
+        margin:10px ;
+    }
+    .bg-top
+    {
+        left:-190%;
+        top: -80%;
+
+    }
+    .bg-bottom
+    {
+        bottom:-90%;
+        right:-175%;
+    }
+
+   
+  }
